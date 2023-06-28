@@ -14,6 +14,9 @@ var fontSize = 10,
   columns = canvas.width / fontSize;
 
 var drops = [];
+
+let resizeTimeout;
+
 for (var i = 0; i < columns; i++) {
   drops[i] = 1;
 }
@@ -32,4 +35,16 @@ function draw() {
   }
 }
 
-setInterval(draw, 33);
+function updateCanvasDimensions() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+function handleResize() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(updateCanvasDimensions, 500);
+}
+
+setInterval(draw, 40);
+window.addEventListener('resize', handleResize);
+

@@ -1,3 +1,4 @@
+// Handle top-navigation clicks
 window.addEventListener("DOMContentLoaded", function () {
   var tabLinks = document.querySelectorAll(".navbar a");
   var tabContents = document.querySelectorAll(".tab-content");
