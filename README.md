@@ -1,1 +1,1 @@
-# firebase-website
+# Test website hosting with Firebase
