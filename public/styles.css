@@ -39,7 +39,7 @@ footer a {
   display: inline-block;
   margin: 0 10px;
   text-decoration: none;
-  color: white
+  color: white;
 }
 
 footer i {
@@ -62,7 +62,32 @@ footer i {
   display: block;
 }
 
-h1,
-h2 {
-  margin-top: 0;
+
+.text-over-picture-container {
+  position: absolute;
+  text-align: center;
+  width: min-content;
+  right: 50px;
+  top: 50px;
+}
+
+.text-over-picture-container .picture-text.centered {
+  position: absolute;
+  
+}
+
+.text-over-picture-container .picture-text.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-over-picture-container.hover-reveal-text .picture-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.text-over-picture-container.hover-reveal-text:hover .picture-text {
+  opacity: 1;
 }

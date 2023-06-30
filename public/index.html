@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XX6BQCT8S3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XX6BQCT8S3");
+    </script>
     <title>Trooligan's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="matrix-bg.css" />
+    <link rel="stylesheet" type="text/css" href="matrix-text.css" />
     <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -13,6 +27,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <div class="navbar">
       <a href="#frontpage">Frontpage</a>
@@ -20,14 +35,47 @@
       <a href="#projects">Projects</a>
     </div>
 
+
     <div id="frontpage" class="tab-content">
-      <h1>Welcome to my Portfolio!</h1>
-      <p>This is the frontpage content.</p>
+      
+      <div class="line-1 anim-typewriter">
+        <h1 id="frontpage-header-1">
+
+        </h1>
+        <p></p>
+      </div>
+
+      <div class="text-over-picture-container hover-reveal-text">
+        <img
+          style="border-radius: 50%"
+          src="./images/profile-pic-1.jpg"
+          alt="Matrix Profile Picture"
+          width="200"
+          height="200"
+        />
+
+        <p class="picture-text centered">Trooligan</p>
+      </div>
     </div>
 
     <div id="skills" class="tab-content">
-      <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript</p>
+      <div class="text-container">
+        <h2 class="text-reveal">Web Skills</h2>
+        <p class="text-reveal">HTML, CSS, JavaScript, React</p>
+
+        <br />
+
+        <h2 class="text-reveal">Database Skills</h2>
+        <p class="text-reveal">Firebase, MongoDB, MariaDB, MySQL</p>
+
+        <br />
+
+        <h2 class="text-reveal">Other Skills</h2>
+        <p class="text-reveal" label="Google Cloud, Azure, Docker, Traefik, Python, Node.js">
+        <p id="test1"></p>
+          
+        </p>
+      </div>
     </div>
 
     <div id="projects" class="tab-content">
@@ -60,7 +108,9 @@
       </a>
     </footer>
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="script.js"></script>
+    <script src="typewriter.js"></script>
     <script src="matrix-bg.js"></script>
   </body>
 </html>
