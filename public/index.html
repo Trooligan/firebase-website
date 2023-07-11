@@ -15,6 +15,9 @@
       gtag("config", "G-XX6BQCT8S3");
     </script>
     <title>Trooligan's Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="tic-tac-toe/TemplateData/style.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="matrix-bg.css" />
     <link rel="stylesheet" type="text/css" href="matrix-text.css" />
@@ -32,7 +35,7 @@
     <div class="navbar">
       <a href="#frontpage">Frontpage</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Projects/Unity</a>
     </div>
 
 
@@ -40,10 +43,15 @@
       
       <div class="line-1 anim-typewriter">
         <h1 id="frontpage-header-1">
-
         </h1>
-        <p></p>
       </div>
+
+      <div class="slider-container">
+        <h3> Background speed</h3>
+        <input type="range" min="0" max="100" value="70" class="slider" id="mySlider">
+        <!-- <output class="slider-value" id="sliderValue">70</output>  # For displaying slider value-->
+      </div>
+      
 
       <div class="text-over-picture-container hover-reveal-text">
         <img
@@ -81,22 +89,12 @@
     <div id="projects" class="tab-content">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Project 1</h3>
-        <p>
-          Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <p>Technologies used: HTML, CSS, JavaScript</p>
-        <p><a href="#">View Project</a></p>
+        <h3>Unity WebGL TicTacToe</h3>
+        <div id="unity-container" style="position:relative !important;top:0 !important;left:0 !important;transform: none !important;" class="unity-desktop">
+          <canvas id="unity-canvas" width=960 height=600></canvas>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>
-          Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <p>Technologies used: HTML, CSS, JavaScript</p>
-        <p><a href="#">View Project</a></p>
-      </div>
     </div>
 
     <canvas id="matrix-bg"></canvas>
@@ -111,6 +109,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="script.js"></script>
     <script src="typewriter.js"></script>
-    <script src="matrix-bg.js"></script>
+    <script src="matrix-bg.js"></script>¨
+    <script src="tic-tac-toe/tic-tac-toe.js"></script>
   </body>
 </html>

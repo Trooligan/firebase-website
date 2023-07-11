@@ -91,3 +91,21 @@ footer i {
 .text-over-picture-container.hover-reveal-text:hover .picture-text {
   opacity: 1;
 }
+
+
+
+.slider-container {
+  width: 300px;
+  margin: 20px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider-value {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}

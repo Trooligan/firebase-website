@@ -23,6 +23,27 @@ window.addEventListener("DOMContentLoaded", function () {
     if (selectedTab) {
       selectedTab.style.display = "block";
     }
+
+    if (selectedTab.id === "projects") {
+      stopInterval()
+      script.onload = () => {
+        createUnityInstance(canvarMatrix, config)
+      };
+      document.body.appendChild(script);
+    } else {
+      if (!matrixIntervalRunning) {
+        startInterval();
+      }
+    }
   }
 });
 
+
+
+const slider = document.getElementById('mySlider');
+//const sliderValue = document.getElementById('sliderValue');
+
+slider.addEventListener('input', function() {
+  //sliderValue.textContent = slider.value; // Displays slider value
+  startInterval()
+});
