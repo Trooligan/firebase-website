@@ -42,6 +42,3 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
   canvarMatrix.style.width = "960px";
   canvarMatrix.style.height = "600px";
 }
-
-var script = document.createElement("script");
-script.src = loaderUrl;

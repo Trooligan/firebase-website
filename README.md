@@ -1,5 +1,3 @@
-# Test website hosting with Firebase
+# Test Static website hosting with Firebase
 
 `firebase deploy`
-
-test12232

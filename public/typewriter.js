@@ -16,14 +16,17 @@ typewriterSkills1
   .typeString("Traefik, Node.js, REST/API")
   .pauseFor(1500)
   .deleteAll()
-  .typeString("Python, C#, C++")
+  .typeString("Python, C#")
+  .pauseFor(1500)
+  .deleteAll()
+  .typeString("Azure Functions, Azure Cosmos DB, Azure API Management")
   .pauseFor(1500)
   .deleteAll()
   .start();
 
 var frontpageHeader1 = document.getElementById("frontpage-header-1");
 
-var typewriterFrontpage1 = new Typewriter(frontpageHeader1, {
+let typewriterFrontpage1 = new Typewriter(frontpageHeader1, {
   delay: 20,
   deleteSpeed: 30,
   loop: false,
@@ -35,4 +38,8 @@ typewriterFrontpage1
   .typeString("<span class='Pulse'>MATRIX</span> becomes a reality")
   .deleteChars(7)
   .typeString("<span class='Pulse'>REALITY</span>")
-  .start();
+  .start()
+  .callFunction(() => {
+    typewriterFrontpage1.stop();
+    typewriterFrontpage1 = null;
+  });

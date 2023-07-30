@@ -25,6 +25,9 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     if (selectedTab.id === "projects") {
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+
       stopInterval()
       script.onload = () => {
         createUnityInstance(canvarMatrix, config)
@@ -40,8 +43,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-const slider = document.getElementById('mySlider');
-//const sliderValue = document.getElementById('sliderValue');
+const slider = document.getElementById('bg-speed-slider');
 
 slider.addEventListener('input', function() {
   //sliderValue.textContent = slider.value; // Displays slider value

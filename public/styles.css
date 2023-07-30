@@ -109,3 +109,30 @@ footer i {
   margin-top: 10px;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .line-1.anim-typewriter {
+    height: 100px;
+  }
+
+  .tab-content {
+    font-size: small;
+  }
+
+  .slider-container {
+    width: 100%;
+    margin: 10% 0 10% 0;
+  }
+
+  .text-over-picture-container {
+    position: unset;
+    width: 100%;
+  }
+
+  .text-over-picture-container .picture-text.centered {
+    transform: none;
+    position: unset;
+  }
+
+}
